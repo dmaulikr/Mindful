@@ -18,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountain" translatesAutoresizingMaskIntoConstraints="NO" id="wue-RE-ZKr">
-                                <rect key="frame" x="-50" y="-50" width="700" height="720"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="present" translatesAutoresizingMaskIntoConstraints="NO" id="wue-RE-ZKr">
+                                <rect key="frame" x="-50" y="-50" width="700" height="670"/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wue-RE-ZKr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-70" id="4lW-Ri-G6a"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="wue-RE-ZKr" secondAttribute="bottom" constant="-70" id="Zhi-5X-tK4"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="wue-RE-ZKr" secondAttribute="bottom" constant="-20" id="Zhi-5X-tK4"/>
                             <constraint firstItem="wue-RE-ZKr" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-70" id="tKi-0B-qSd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wue-RE-ZKr" secondAttribute="trailing" constant="-70" id="taL-Bo-h1D"/>
                         </constraints>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Mountain" width="425" height="600"/>
+        <image name="present" width="5396" height="3597"/>
     </resources>
 </document>

@@ -17,6 +17,7 @@
 		F50E90CD1BF55AF300D1CF6D /* PastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E90CC1BF55AF300D1CF6D /* PastViewController.m */; };
 		F50E90D31BF55F2500D1CF6D /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E90D21BF55F2500D1CF6D /* IntroViewController.m */; };
 		F50E90DF1BF5641600D1CF6D /* UtilityBelt.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E90DE1BF5641600D1CF6D /* UtilityBelt.m */; };
+		F5973BFB1BF7FE8A00762464 /* DeductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973BFA1BF7FE8A00762464 /* DeductViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		F50E90D21BF55F2500D1CF6D /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
 		F50E90DD1BF5641600D1CF6D /* UtilityBelt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityBelt.h; sourceTree = "<group>"; };
 		F50E90DE1BF5641600D1CF6D /* UtilityBelt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityBelt.m; sourceTree = "<group>"; };
+		F5973BF91BF7FE8A00762464 /* DeductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeductViewController.h; sourceTree = "<group>"; };
+		F5973BFA1BF7FE8A00762464 /* DeductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeductViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				F50E90D71BF55F4000D1CF6D /* Intro */,
+				F5973BF81BF7FE4B00762464 /* Deduct */,
 				F50E90D41BF55F2A00D1CF6D /* Present */,
 				F50E90D51BF55F3200D1CF6D /* Future */,
 				F50E90D61BF55F3A00D1CF6D /* Past */,
@@ -162,6 +166,15 @@
 				F50E90DE1BF5641600D1CF6D /* UtilityBelt.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F5973BF81BF7FE4B00762464 /* Deduct */ = {
+			isa = PBXGroup;
+			children = (
+				F5973BF91BF7FE8A00762464 /* DeductViewController.h */,
+				F5973BFA1BF7FE8A00762464 /* DeductViewController.m */,
+			);
+			name = Deduct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F50E90B91BF5570E00D1CF6D /* FutureViewController.m in Sources */,
+				F5973BFB1BF7FE8A00762464 /* DeductViewController.m in Sources */,
 				F50E90D31BF55F2500D1CF6D /* IntroViewController.m in Sources */,
 				F50E90B31BF5570E00D1CF6D /* AppDelegate.m in Sources */,
 				F50E90CD1BF55AF300D1CF6D /* PastViewController.m in Sources */,
@@ -393,6 +407,7 @@
 				F50E90C71BF5570E00D1CF6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
