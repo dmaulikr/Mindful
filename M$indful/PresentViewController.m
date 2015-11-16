@@ -19,16 +19,17 @@
     [super viewDidLoad];
     [UtilityBelt addMotionToView:self.backgroundView];
 
-//    self.payButton.layer.cornerRadius = self.payButton.frame.size.height / 2.0;
-//    self.payButton.layer.borderColor = self.payButton.titleLabel.textColor.CGColor;
     self.payButton.backgroundColor = [UIColor clearColor];
-//    self.payButton.layer.borderWidth = 2.0;
-
-
-//    self.earnButton.layer.cornerRadius = self.earnButton.frame.size.height / 2.0;
-//    self.earnButton.layer.borderColor = self.earnButton.titleLabel.textColor.CGColor;
     self.earnButton.backgroundColor = [UIColor clearColor];
-//    self.earnButton.layer.borderWidth = 2.0;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    double num = [[NSUserDefaults standardUserDefaults] doubleForKey:@"balance"];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    self.balanceLabel.text = [formatter stringFromNumber:@(num)];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

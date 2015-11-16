@@ -10,16 +10,16 @@
 
 @implementation UtilityBelt
 
-+ (void)addMotionToView:(UIView *)view {
++ (void)addMotionToView:(UIView *)view size:(CGSize)size {
     // Set vertical effect
     UIInterpolatingMotionEffect *verticalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y" type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-    verticalMotionEffect.minimumRelativeValue = @(-20);
-    verticalMotionEffect.maximumRelativeValue = @(20);
+    verticalMotionEffect.minimumRelativeValue = @(-size.height);
+    verticalMotionEffect.maximumRelativeValue = @(size.height);
 
     // Set horizontal effect
     UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-    horizontalMotionEffect.minimumRelativeValue = @(-20);
-    horizontalMotionEffect.maximumRelativeValue = @(20);
+    horizontalMotionEffect.minimumRelativeValue = @(-size.width);
+    horizontalMotionEffect.maximumRelativeValue = @(size.width);
 
     // Create group to combine both
     UIMotionEffectGroup *group = [UIMotionEffectGroup new];
@@ -27,6 +27,10 @@
 
     // Add both effects to your view
     [view addMotionEffect:group];
+}
+
++ (void)addMotionToView:(UIView *)view {
+    [UtilityBelt addMotionToView:view size:CGSizeMake(20, 20)];
 }
 
 @end

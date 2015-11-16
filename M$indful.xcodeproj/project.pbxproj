@@ -17,7 +17,13 @@
 		F50E90CD1BF55AF300D1CF6D /* PastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E90CC1BF55AF300D1CF6D /* PastViewController.m */; };
 		F50E90D31BF55F2500D1CF6D /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E90D21BF55F2500D1CF6D /* IntroViewController.m */; };
 		F50E90DF1BF5641600D1CF6D /* UtilityBelt.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E90DE1BF5641600D1CF6D /* UtilityBelt.m */; };
+		F54644901BF8545A00C347AF /* MoneyBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F546448F1BF8545A00C347AF /* MoneyBaseViewController.m */; };
+		F556E8301BF8E9E400EA5C0F /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F556E82F1BF8E9E400EA5C0F /* CategoryViewController.m */; };
 		F5973BFB1BF7FE8A00762464 /* DeductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5973BFA1BF7FE8A00762464 /* DeductViewController.m */; };
+		F5D2862E1BF85D1700BFAA85 /* IncomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D2862D1BF85D1700BFAA85 /* IncomeViewController.m */; };
+		F5D4D5941BF8E31E00865535 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D4D5931BF8E31E00865535 /* Transaction.m */; };
+		F5D4D5971BF8E57A00865535 /* TransactionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D4D5961BF8E57A00865535 /* TransactionManager.m */; };
+		F5D4D59A1BF8E60300865535 /* TransactionList.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D4D5991BF8E60300865535 /* TransactionList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +45,20 @@
 		F50E90D21BF55F2500D1CF6D /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
 		F50E90DD1BF5641600D1CF6D /* UtilityBelt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityBelt.h; sourceTree = "<group>"; };
 		F50E90DE1BF5641600D1CF6D /* UtilityBelt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityBelt.m; sourceTree = "<group>"; };
+		F546448E1BF8545A00C347AF /* MoneyBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyBaseViewController.h; sourceTree = "<group>"; };
+		F546448F1BF8545A00C347AF /* MoneyBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyBaseViewController.m; sourceTree = "<group>"; };
+		F556E82E1BF8E9E400EA5C0F /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		F556E82F1BF8E9E400EA5C0F /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		F5973BF91BF7FE8A00762464 /* DeductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeductViewController.h; sourceTree = "<group>"; };
 		F5973BFA1BF7FE8A00762464 /* DeductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeductViewController.m; sourceTree = "<group>"; };
+		F5D2862C1BF85D1700BFAA85 /* IncomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncomeViewController.h; sourceTree = "<group>"; };
+		F5D2862D1BF85D1700BFAA85 /* IncomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncomeViewController.m; sourceTree = "<group>"; };
+		F5D4D5921BF8E31E00865535 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		F5D4D5931BF8E31E00865535 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		F5D4D5951BF8E57A00865535 /* TransactionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionManager.h; sourceTree = "<group>"; };
+		F5D4D5961BF8E57A00865535 /* TransactionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionManager.m; sourceTree = "<group>"; };
+		F5D4D5981BF8E60300865535 /* TransactionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionList.h; sourceTree = "<group>"; };
+		F5D4D5991BF8E60300865535 /* TransactionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +92,7 @@
 		F50E90AD1BF5570E00D1CF6D /* M$indful */ = {
 			isa = PBXGroup;
 			children = (
+				F5D4D5911BF8E30800865535 /* Models */,
 				F50E90DC1BF5640300D1CF6D /* Helpers */,
 				F50E90CA1BF5573C00D1CF6D /* Controllers */,
 				F50E90B11BF5570E00D1CF6D /* AppDelegate.h */,
@@ -114,8 +133,8 @@
 		F50E90CA1BF5573C00D1CF6D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F546448C1BF8541500C347AF /* IncomeExpense */,
 				F50E90D71BF55F4000D1CF6D /* Intro */,
-				F5973BF81BF7FE4B00762464 /* Deduct */,
 				F50E90D41BF55F2A00D1CF6D /* Present */,
 				F50E90D51BF55F3200D1CF6D /* Future */,
 				F50E90D61BF55F3A00D1CF6D /* Past */,
@@ -168,6 +187,27 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		F546448C1BF8541500C347AF /* IncomeExpense */ = {
+			isa = PBXGroup;
+			children = (
+				F5D4D5901BF8E2F200865535 /* Categories */,
+				F546448D1BF8544300C347AF /* Income */,
+				F5973BF81BF7FE4B00762464 /* Deduct */,
+				F546448E1BF8545A00C347AF /* MoneyBaseViewController.h */,
+				F546448F1BF8545A00C347AF /* MoneyBaseViewController.m */,
+			);
+			name = IncomeExpense;
+			sourceTree = "<group>";
+		};
+		F546448D1BF8544300C347AF /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				F5D2862C1BF85D1700BFAA85 /* IncomeViewController.h */,
+				F5D2862D1BF85D1700BFAA85 /* IncomeViewController.m */,
+			);
+			name = Income;
+			sourceTree = "<group>";
+		};
 		F5973BF81BF7FE4B00762464 /* Deduct */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +215,28 @@
 				F5973BFA1BF7FE8A00762464 /* DeductViewController.m */,
 			);
 			name = Deduct;
+			sourceTree = "<group>";
+		};
+		F5D4D5901BF8E2F200865535 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F556E82E1BF8E9E400EA5C0F /* CategoryViewController.h */,
+				F556E82F1BF8E9E400EA5C0F /* CategoryViewController.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F5D4D5911BF8E30800865535 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5D4D5921BF8E31E00865535 /* Transaction.h */,
+				F5D4D5931BF8E31E00865535 /* Transaction.m */,
+				F5D4D5981BF8E60300865535 /* TransactionList.h */,
+				F5D4D5991BF8E60300865535 /* TransactionList.m */,
+				F5D4D5951BF8E57A00865535 /* TransactionManager.h */,
+				F5D4D5961BF8E57A00865535 /* TransactionManager.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,14 +309,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D4D5971BF8E57A00865535 /* TransactionManager.m in Sources */,
 				F50E90B91BF5570E00D1CF6D /* FutureViewController.m in Sources */,
+				F5D4D59A1BF8E60300865535 /* TransactionList.m in Sources */,
 				F5973BFB1BF7FE8A00762464 /* DeductViewController.m in Sources */,
+				F556E8301BF8E9E400EA5C0F /* CategoryViewController.m in Sources */,
 				F50E90D31BF55F2500D1CF6D /* IntroViewController.m in Sources */,
 				F50E90B31BF5570E00D1CF6D /* AppDelegate.m in Sources */,
 				F50E90CD1BF55AF300D1CF6D /* PastViewController.m in Sources */,
 				F50E90B61BF5570E00D1CF6D /* PresentViewController.m in Sources */,
 				F50E90B01BF5570E00D1CF6D /* main.m in Sources */,
+				F5D4D5941BF8E31E00865535 /* Transaction.m in Sources */,
 				F50E90DF1BF5641600D1CF6D /* UtilityBelt.m in Sources */,
+				F54644901BF8545A00C347AF /* MoneyBaseViewController.m in Sources */,
+				F5D2862E1BF85D1700BFAA85 /* IncomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

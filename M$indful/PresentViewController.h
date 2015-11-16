@@ -13,6 +13,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView* backgroundView;
 @property (nonatomic, weak) IBOutlet UIButton* payButton;
 @property (nonatomic, weak) IBOutlet UIButton* earnButton;
+@property (nonatomic, weak) IBOutlet UILabel* balanceLabel;
 
 @end
 
