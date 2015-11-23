@@ -7,6 +7,7 @@
 //
 
 #import "UtilityBelt.h"
+#import "Transaction.h"
 #import "TransactionList.h"
 #import "TransactionManager.h"
 
@@ -15,13 +16,39 @@
 - (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super init];
     if (self) {
+        DECODE_DOUBLE(self.amount);
         DECODE_OBJECT(self.transactions);
+        if (self.transactions == nil)
+            self.transactions = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
     ENCODE_OBJECT(self.transactions);
+    ENCODE_PRIMITIVE(self.amount);
+}
+
+- (void)deduct:(double)amount forItem:(NSString*)category {
+    Transaction* transaction = [[Transaction alloc] initWithCost:amount andCategory:category];
+    [self.transactions addObject:transaction];
+    self.amount -= amount;
+    [self save];
+}
+
+- (void)increase:(double)amount because:(NSString*)category {
+    Transaction* transaction = [[Transaction alloc] initWithIncome:amount andCategory:category];
+    [self.transactions addObject:transaction];
+    self.amount += amount;
+    [self save];
+}
+
+- (NSArray *)purchases {
+    return [self.transactions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isIncome == NO"]];
+}
+
+- (NSArray *)incomes {
+    return [self.transactions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isIncome == YES"]];
 }
 
 - (void)save {

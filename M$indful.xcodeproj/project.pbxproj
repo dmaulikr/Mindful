@@ -133,7 +133,7 @@
 		F50E90CA1BF5573C00D1CF6D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F546448C1BF8541500C347AF /* IncomeExpense */,
+				F546448C1BF8541500C347AF /* Income & Expense */,
 				F50E90D71BF55F4000D1CF6D /* Intro */,
 				F50E90D41BF55F2A00D1CF6D /* Present */,
 				F50E90D51BF55F3200D1CF6D /* Future */,
@@ -187,7 +187,7 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		F546448C1BF8541500C347AF /* IncomeExpense */ = {
+		F546448C1BF8541500C347AF /* Income & Expense */ = {
 			isa = PBXGroup;
 			children = (
 				F5D4D5901BF8E2F200865535 /* Categories */,
@@ -196,7 +196,7 @@
 				F546448E1BF8545A00C347AF /* MoneyBaseViewController.h */,
 				F546448F1BF8545A00C347AF /* MoneyBaseViewController.m */,
 			);
-			name = IncomeExpense;
+			name = "Income & Expense";
 			sourceTree = "<group>";
 		};
 		F546448D1BF8544300C347AF /* Income */ = {

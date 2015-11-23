@@ -11,6 +11,27 @@
 
 @implementation Transaction
 
+- (instancetype)initWithIncome:(double)amount andCategory:(NSString*)category {
+    self = [super init];
+    if (self) {
+        self.isIncome = YES;
+        self.amount = amount;
+        self.category = category;
+        self.date = [NSDate date];
+    }
+    return self;
+}
+
+- (instancetype)initWithCost:(double)amount andCategory:(NSString*)category {
+    if (self) {
+        self.isIncome = NO;
+        self.amount = amount;
+        self.category = category;
+        self.date = [NSDate date];
+    }
+    return self;
+}
+
 - (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super init];
     if (self) {

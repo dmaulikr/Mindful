@@ -7,6 +7,7 @@
 //
 
 #import "PresentViewController.h"
+#import "TransactionList.h"
 #import "UtilityBelt.h"
 
 @interface PresentViewController ()
@@ -26,7 +27,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 
-    double num = [[NSUserDefaults standardUserDefaults] doubleForKey:@"balance"];
+    double num = [TransactionList sharedInstance].amount;
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
     self.balanceLabel.text = [formatter stringFromNumber:@(num)];

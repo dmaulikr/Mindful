@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UtilityBelt.h"
+#import "CategoryViewController.h"
 
 @interface MoneyBaseViewController : UIViewController
 

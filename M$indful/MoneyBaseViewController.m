@@ -7,6 +7,7 @@
 //
 
 #import "MoneyBaseViewController.h"
+#import "TransactionList.h"
 
 @implementation MoneyBaseViewController
 
@@ -15,11 +16,11 @@
 
     self.number = @"";
 
-    for (UIButton* button in self.buttons) {
-        button.layer.borderColor = button.titleLabel.textColor.CGColor;
-        button.layer.cornerRadius = button.frame.size.height/2.0;
-        button.layer.borderWidth = 1.0;
-    }
+//    for (UIButton* button in self.buttons) {
+//        button.layer.borderColor = button.titleLabel.textColor.CGColor;
+//        button.layer.cornerRadius = button.frame.size.height/2.0;
+//        button.layer.borderWidth = 1.0;
+//    }
 }
 
 - (IBAction)cancelButtonHit:(id)sender {
@@ -27,14 +28,14 @@
 }
 
 - (IBAction)nextButtonHit:(id)sender {
-    double balance = [[NSUserDefaults standardUserDefaults] doubleForKey:@"balance"];
-    if (self.addition)  balance = balance + self.number.doubleValue;
-    else                balance = balance - self.number.doubleValue;
-
-    [[NSUserDefaults standardUserDefaults] setDouble:balance forKey:@"balance"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-
-    [self performSegueWithIdentifier:@"next" sender:self];
+    if (self.addition) {
+        //eventually they both segue to next...
+        [[TransactionList sharedInstance] increase:self.number.doubleValue because:@"Salary"];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else {
+        [self performSegueWithIdentifier:@"next" sender:self];
+    }
 }
 
 - (IBAction)numberButtonHit:(id)sender {

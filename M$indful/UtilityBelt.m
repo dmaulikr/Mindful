@@ -33,4 +33,10 @@
     [UtilityBelt addMotionToView:view size:CGSizeMake(20, 20)];
 }
 
++ (NSArray*)uniqueAndSortedArray:(NSArray*)array forKey:(NSString*)key {
+    array =  [array valueForKey:key];
+    array = [[[NSSet setWithArray:array] allObjects] sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES]]];
+    return array;
+}
+
 @end

@@ -25,4 +25,6 @@
 + (void)addMotionToView:(UIView *)view size:(CGSize)size;
 + (void)addMotionToView:(UIView*)view;
 
++ (NSArray*)uniqueAndSortedArray:(NSArray*)array forKey:(NSString*)key;
+
 @end
